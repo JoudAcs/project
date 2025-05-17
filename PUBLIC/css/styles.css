@@ -187,18 +187,39 @@ html,body {
   z-index: 447;
 }
 
-.social-icon{
+.social-icon {
   margin-bottom: 250px;
+  text-align: center;
 }
 
-.social-icon ul li{
+.social-icon ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
   display: inline-block;
-  margin-left: 20px;
 }
 
-.social-icon ul li a{
-  color: #fff;
+.social-icon ul li {
+  display: inline-block;
+  margin: 0 15px;
+  vertical-align: middle;
 }
+
+.social-icon ul li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* مسافة بين الأيقونة والنص */
+}
+
+.social-icon ul li a i {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
 
 .page-section{
 	margin-top: 100px;
@@ -249,7 +270,7 @@ html,body {
 }
 
 .about__description{
-  font-size: 16px;
+  font-size: 20px;
   color: #636262;
   padding-bottom: 25px;
   border-bottom: 1px #C1C1C1 dashed;
@@ -351,6 +372,7 @@ html,body {
 }
 
 .skill .thumbnail{
+    display: flex;
   padding: 10px 40px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
@@ -358,12 +380,13 @@ html,body {
 }
 
 .skill .thumbnail .progress-bar{
-  border-radius: 10px;
+ width: 0 !important;
+  height: 0 !important;
+  visibility: hidden;
 }
 
 .skill .thumbnail .progress{
- height: 8px;
- background-color: #E1E1E1;
+   display: none
 }
 
 .skill__single-part__title{
